@@ -1,0 +1,4 @@
+2026-05-01 23:49:22,582 - app.routers.video - INFO - 成功清理临时文件: S:\Code\python_code\e_commerce\temp_video\7620652076934171918.mp4
+2026-05-01 23:49:22,583 - app.routers.video - INFO - 成功清理临时文件: S:\Code\python_code\e_commerce\temp_audio\7620652076934171918.wav
+2026-05-02 12:24:32,077 - app.routers.video - INFO - 成功清理临时文件: S:\Code\python_code\e_commerce\temp_video\7618451225570282783.mp4
+2026-05-02 12:24:32,080 - app.routers.video - INFO - 成功清理临时文件: S:\Code\python_code\e_commerce\temp_audio\7618451225570282783.wav

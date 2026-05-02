@@ -1,0 +1,84 @@
+2026-05-01 22:35:56,194 - utils.audio_utils - INFO - ffmpeg转码失败：ffmpeg version 8.1-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S:\Code\python_code\e_commerce\temp_video\7620652076934171918.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41iso5
+    aigc_info       : {"aigc_label_type":0}
+    comment         : vid:v12044gd0000d70vtdnog65vnfigiohg
+    vid_md5         : 8a3a674fa56902a45077be32644072ac
+    encoder         : Lavf58.76.100
+  Duration: 00:02:09.71, start: 0.000000, bitrate: 352 kb/s
+  Stream #0:0[0x2](und): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 720x720, 362 kb/s, SAR 1:1 DAR 1:1, 23.98 fps, 23.98 tbr, 11988 tbn (default)
+    Metadata:
+      handler_name    : Bento4 Video Handler
+Output #0, wav, to 'S:\Code\python_code\e_commerce\temp_audio\7620652076934171918.wav':
+[out#0/wav @ 000001755c6ea000] Output file does not contain any stream
+Error opening output file S:\Code\python_code\e_commerce\temp_audio\7620652076934171918.wav.
+Error opening output files: Invalid argument
+
+2026-05-01 22:50:43,572 - utils.audio_utils - INFO - ffmpeg转码失败：ffmpeg version 8.1-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S:\Code\python_code\e_commerce\temp_video\7620652076934171918.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41iso5
+    aigc_info       : {"aigc_label_type":0}
+    comment         : vid:v12044gd0000d70vtdnog65vnfigiohg
+    vid_md5         : 8a3a674fa56902a45077be32644072ac
+    encoder         : Lavf58.76.100
+  Duration: 00:02:09.71, start: 0.000000, bitrate: 352 kb/s
+  Stream #0:0[0x2](und): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 720x720, 362 kb/s, SAR 1:1 DAR 1:1, 23.98 fps, 23.98 tbr, 11988 tbn (default)
+    Metadata:
+      handler_name    : Bento4 Video Handler
+Output #0, wav, to 'S:\Code\python_code\e_commerce\temp_audio\7620652076934171918.wav':
+[out#0/wav @ 000001f5ebefa000] Output file does not contain any stream
+Error opening output file S:\Code\python_code\e_commerce\temp_audio\7620652076934171918.wav.
+Error opening output files: Invalid argument
+
+2026-05-01 22:53:11,124 - utils.audio_utils - INFO - ffmpeg转码失败：ffmpeg version 8.1-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'S:\Code\python_code\e_commerce\temp_video\7620652076934171918.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41iso5
+    aigc_info       : {"aigc_label_type":0}
+    comment         : vid:v12044gd0000d70vtdnog65vnfigiohg
+    vid_md5         : 8a3a674fa56902a45077be32644072ac
+    encoder         : Lavf58.76.100
+  Duration: 00:02:09.71, start: 0.000000, bitrate: 352 kb/s
+  Stream #0:0[0x2](und): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 720x720, 362 kb/s, SAR 1:1 DAR 1:1, 23.98 fps, 23.98 tbr, 11988 tbn (default)
+    Metadata:
+      handler_name    : Bento4 Video Handler
+Output #0, wav, to 'S:\Code\python_code\e_commerce\temp_audio\7620652076934171918.wav':
+[out#0/wav @ 00000261c90da000] Output file does not contain any stream
+Error opening output file S:\Code\python_code\e_commerce\temp_audio\7620652076934171918.wav.
+Error opening output files: Invalid argument
+
