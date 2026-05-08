@@ -25,7 +25,7 @@ if not os.path.exists(model_path):
         local_dir=model_path,
         local_dir_use_symlinks=False,
         allow_patterns=[
-            "*.bin",
+            "model.safetensors",
             "*.json"
         ]
     )
