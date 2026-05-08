@@ -7,7 +7,7 @@ from faster_whisper import WhisperModel
 
 from app.infra.config import settings
 from app.infra.logger import get_logger
-from utils.video_utils import ydl_opts
+from utils.video_utils import get_ydl_opts
 from utils.audio_utils import extract_audio
 
 logger = get_logger(__name__)
@@ -35,7 +35,7 @@ REQUIRED_FIELDS = [
 
 
 def _download(video_url: str) -> dict:
-    with ytdl.YoutubeDL(ydl_opts) as ydl:
+    with ytdl.YoutubeDL(get_ydl_opts()) as ydl:
         raw_video_info = ydl.extract_info(video_url, download=True)
         # 新增：防呆检查，确保提取到视频信息
         if not raw_video_info:

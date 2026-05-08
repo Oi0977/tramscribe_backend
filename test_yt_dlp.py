@@ -1,27 +1,23 @@
-import yt_dlp as ytdl
-import os
-from app.infra.config import settings, PROJECT_ROOT
 import json
+import os
+
+import yt_dlp as ytdl
+
+from app.infra.config import PROJECT_ROOT
+from utils.video_utils import get_ydl_opts
 
 TIKTOK_URL = "https://www.tiktok.com/@slayspeech/video/7618451225570282783"
 
 output_dir_url = str(PROJECT_ROOT / 'temp_video')
 os.makedirs(output_dir_url, exist_ok=True)
 
-ydl_opts = {
-    'ffmpeg_location': settings.FFMPEG_PATH,
-    "impersonate_targets": ["Chrome-131", 'Chrome-124', 'Chrome-116'],
-    "format": "best[height=720]/best",
-    "outtmpl": f'{output_dir_url}/%(id)s.%(ext)s',
-    "quiet": True,
-    'proxy': settings.PROXY,
-    'extractor_args': {'tiktok': {'webpage_downloader': 'curl'}}
-}
+ydl_opts = get_ydl_opts()
 
 with ytdl.YoutubeDL(ydl_opts) as ydl:
     print("正在下载TikTok视频...")
     video_info = ydl.extract_info(TIKTOK_URL, download=True)
     video_file_path = ydl.prepare_filename(video_info)  # 获取下载的视频完整路径
+    print(video_file_path)
 
 print("下载完成！")
 print("=== 所有元数据 ===")
