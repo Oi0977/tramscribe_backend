@@ -56,7 +56,7 @@ class AppSettings(BaseSettings):
     )
     # 运行设备（cpu：无显卡通用；cuda：NVIDIA显卡加速）
     DEVICE: str = Field(
-        default="cuda",
+        default="cpu",
         description="模型运行设备，可选：cpu / cuda"
     )
     # 识别语言（zh=中文，en=英文，auto=自动检测）
