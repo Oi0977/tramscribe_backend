@@ -25,11 +25,8 @@ if not os.path.exists(model_path):
         local_dir=model_path,
         local_dir_use_symlinks=False,
         allow_patterns=[
-            "config.json",
-            "model.bin",
-            "preprocessor_config.json",
-            "tokenizer.json",
-            "vocabulary.json"
+            "*.bin",
+            "*.json"
         ]
     )
 
