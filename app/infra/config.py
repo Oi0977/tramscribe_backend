@@ -21,7 +21,7 @@ class AppSettings(BaseSettings):
     # "socks5://MaB7HouwTW:wwRLgRouP7@38.49.38.21:13970"
     # ========================== 网络与代理配置 ==========================
     PROXY: str | None = Field(
-        default = "socks5://127.0.0.1:10808",
+        default = None,
         description="全局网络代理，部署到服务器如不需要可设为 null 或通过环境变量覆盖"
     )
     # ========================== FFmpeg 配置 ==========================
