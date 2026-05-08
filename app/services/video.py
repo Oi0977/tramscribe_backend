@@ -10,13 +10,8 @@ from app.infra.logger import get_logger
 from utils.video_utils import get_ydl_opts
 from utils.audio_utils import extract_audio
 
+_model_instance = None
 logger = get_logger(__name__)
-
-model = WhisperModel(
-        model_size_or_path=str(settings.LOCAL_MODEL_PATH),
-        device=settings.DEVICE,
-        compute_type='int8'
-    )
 
 REQUIRED_FIELDS = [
     "title",#视频标题
@@ -33,6 +28,16 @@ REQUIRED_FIELDS = [
     "save_count"#收藏量
 ]
 
+def get_whisper_model():
+    global _model_instance
+    if _model_instance is None:
+        _model_instance = WhisperModel(
+            model_size_or_path=str(settings.LOCAL_MODEL_PATH),
+            device=settings.DEVICE,
+            compute_type='int8',
+            local_files_only=True
+        )
+    return _model_instance
 
 def _download(video_url: str) -> dict:
     with ytdl.YoutubeDL(get_ydl_opts()) as ydl:
@@ -123,6 +128,7 @@ async def extract_audio_from_video(url_in: str, url_out: str|None) -> str:
 
 async def transcribe_audio(url_in: str, language:str|None = None) -> dict:
 
+    model = get_whisper_model()
     def _transcribe():
         segment_list = []
         segments, info = model.transcribe(
