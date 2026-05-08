@@ -23,7 +23,14 @@ if not os.path.exists(model_path):
     snapshot_download(
         repo_id="distil-whisper/distil-large-v3",
         local_dir=model_path,
-        local_dir_use_symlinks=False
+        local_dir_use_symlinks=False,
+        allow_patterns=[
+            "config.json",
+            "model.bin",
+            "preprocessor_config.json",
+            "tokenizer.json",
+            "vocabulary.json"
+        ]
     )
 
 # 定义清理逻辑
