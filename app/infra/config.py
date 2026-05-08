@@ -18,7 +18,7 @@ class AppSettings(BaseSettings):
     所有参数自带中文描述，IDE自动提示，文档自动生成
     """
     # "socks5://127.0.0.1:10808",
-    # "socks5://MfdHg9Jk2Y:QdT8gZEIq7@38.49.38.21:11711"
+    # "socks5://MaB7HouwTW:wwRLgRouP7@38.49.38.21:13970"
     # ========================== 网络与代理配置 ==========================
     PROXY: str | None = Field(
         default = "socks5://127.0.0.1:10808",
@@ -47,11 +47,6 @@ class AppSettings(BaseSettings):
     #扩展名
     EXTEND_NAME: str = Field(".wav",
         description="转化成wav格式，适配whisper")
-    #只保留音频
-    AUDIO_ONLY: str = Field(
-        default='-vn',
-        description="不要视频，只保留音频"
-    )
 
     # ========================== 语音识别模型配置 ==========================
     # 本地模型路径（动态绑定项目根目录，models文件夹放在项目下即可）
