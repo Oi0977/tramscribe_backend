@@ -17,17 +17,13 @@ from huggingface_hub import snapshot_download
 import os
 
 # 模型保存路径（和你原来的路径一致）
-model_path = "./ai_model/distil-large-v3"
+model_path = "./ai_model/faster-whisper-medium"
 if not os.path.exists(model_path):
     print("正在自动下载模型...")
     snapshot_download(
-        repo_id="distil-whisper/distil-large-v3",
+        repo_id="Systran/faster-whisper-medium",
         local_dir=model_path,
         local_dir_use_symlinks=False,
-        allow_patterns=[
-            "model.safetensors",
-            "*.json"
-        ]
     )
 
 # 定义清理逻辑
