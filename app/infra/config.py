@@ -51,7 +51,7 @@ class AppSettings(BaseSettings):
     # ========================== 语音识别模型配置 ==========================
     # 本地模型路径（动态绑定项目根目录，models文件夹放在项目下即可）
     LOCAL_MODEL_PATH: Path = Field(
-        default=PROJECT_ROOT / "ai_model" / "distil-large-v3",
+        default=PROJECT_ROOT / "ai_model" / "faster-whisper-medium",
         description="faster-whisper本地模型路径，自动适配项目目录"
     )
     # 运行设备（cpu：无显卡通用；cuda：NVIDIA显卡加速）
