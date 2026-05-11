@@ -69,7 +69,7 @@ app = FastAPI(lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://e-commerce-phi-neon-34.vercel.app/",
+        "https://e-commerce-phi-neon-34.vercel.app",
         "http://localhost:8000",
     ],
     allow_credentials=True,
