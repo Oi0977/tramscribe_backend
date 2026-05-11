@@ -34,6 +34,11 @@ class AppSettings(BaseSettings):
         default=PROJECT_ROOT/"tools"/"ffmpeg"/"ffmpeg-8.1-essentials_build"/"bin"/"ffmpeg.exe",
         description="FFmpeg工具路径，动态绑定项目根目录，部署无需修改"
     )
+    
+    AUDIO_ONLY: str = Field(
+        default="-vn",
+        description="FFmpeg 参数：禁用视频流，仅处理音频"
+    )
     # 目标音频采样率（VAD/Whisper模型标准采样率，固定16000）
     TARGET_SAMPLE_RATE: int = Field(
         default=16000,
