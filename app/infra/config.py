@@ -26,12 +26,12 @@ class AppSettings(BaseSettings):
     )
     # ========================== FFmpeg 配置 ==========================
     FFMPEG_PATH: str = Field(
-        default= str(PROJECT_ROOT/"tools"/"ffmpeg"/"ffmpeg-8.1-essentials_build"/"bin"),
+        default= str(PROJECT_ROOT/"tools"/"ffmpeg"/"bin"),
         description='找到存放ffmpeg执行文件的文件夹'
     )
     # FFmpeg可执行文件完整路径
     FFMPEG_EXEC_PATH: Path = Field(
-        default=PROJECT_ROOT/"tools"/"ffmpeg"/"ffmpeg-8.1-essentials_build"/"bin"/"ffmpeg.exe",
+        default=PROJECT_ROOT/"tools"/"ffmpeg"/"bin"/"ffmpeg",
         description="FFmpeg工具路径，动态绑定项目根目录，部署无需修改"
     )
     
